@@ -1,15 +1,12 @@
-	<mvc:View
+<mvc:View
 	xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout"
-	xmlns:f="sap.ui.layout.form"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:t="sap.ui.table"
 	xmlns="sap.ui.commons"
 	controllerName="sap.training.view.Accessing_Data_From_Model"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	
-	<t:Table width="100%" title="Products" visibleRowCount="10" rowSelectionChange="onRowChange"
-        selectionMode="Single" rows="{path: '/Products' }">
+	<t:Table title="Products"  rowSelectionChange="onRowChange" rows="{/Products}">
 		<t:columns>
 			<t:Column>
 				<t:label>
